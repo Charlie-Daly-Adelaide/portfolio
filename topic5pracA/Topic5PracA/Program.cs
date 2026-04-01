@@ -1,6 +1,8 @@
 ﻿
 static void main()
     {
+        /*
+        // array section
         Console.WriteLine("og list:");
         string[] StringName = ["liam", "charlie", "devlyn", "james", "leon", "arthur", "chris", "david", "john", "rizzler"];
         foreach (string i in StringName)
@@ -50,7 +52,42 @@ static void main()
         {
             Console.WriteLine(i);
         }
+        */
+        string[] StringName = ["liam", "charlie", "devlyn", "james", "leon", "arthur", "chris", "david", "john", "rizzler"];    
 
+        var ListNames = new List<string> {"liam", "charlie", "devlyn", "james", "leon", "arthur", "chris", "david", "john", "rizzler"};
+        ListNames.Add("sneh");
+        ListNames.Remove("chris");
+        ListNames.Insert(1, "gooner");
+        string[] extranames = {"donald", "dom", "lewis"};
+        ListNames.AddRange(extranames);
+        string inputName = Console.ReadLine();
+        int tally = 0;
+        foreach (string i in ListNames)
+    {
+        if (i == inputName)
+        {
+            Console.WriteLine($"index number {tally} for {ListNames[tally]}");
+        }
+        tally += 1;
+    }
+    string inputPartName = Console.ReadLine();
+    foreach (string i in ListNames)
+    {
+        if (i.Contains(inputPartName) == true)
+        {
+            Console.WriteLine(i);
+        }
+    }
+    int total = 0;
+    foreach (string i in ListNames)
+    {
+        total += i.Length;
+    }
+    Console.WriteLine(total);
+
+    List<string> stringList = new List<string>(StringName);
+    ListNames.AddRange(stringList);
     }
 
 main();
