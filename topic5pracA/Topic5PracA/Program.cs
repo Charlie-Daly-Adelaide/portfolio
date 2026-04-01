@@ -53,6 +53,8 @@ static void main()
             Console.WriteLine(i);
         }
         */
+        
+        //list section
         string[] StringName = ["liam", "charlie", "devlyn", "james", "leon", "arthur", "chris", "david", "john", "rizzler"];    
 
         var ListNames = new List<string> {"liam", "charlie", "devlyn", "james", "leon", "arthur", "chris", "david", "john", "rizzler"};
@@ -88,6 +90,7 @@ static void main()
 
     List<string> stringList = new List<string>(StringName);
     ListNames.AddRange(stringList);
+    
     }
 
 main();

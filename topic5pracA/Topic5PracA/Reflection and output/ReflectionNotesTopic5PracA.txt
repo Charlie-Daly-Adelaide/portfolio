@@ -1,0 +1,5 @@
+Reflection notes:
+task1:
+c# sorts sting array alphabetically
+task3:
+set up between lists and array are different with lists being flexible and arrays being set in stone, you are able to search and look at the list items easier then an array that requires something like a for each loop to see any items within it. an array is set in stone once its created, while a list is able to change and increase and decrease. making lists good for flexible requirements while an array provides better performance for things that wont changes 
